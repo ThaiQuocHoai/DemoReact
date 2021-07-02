@@ -11,7 +11,8 @@ import './App.css';
 // import BaiTapChonXe from './RenderWithState/BaiTapChonXe';
 // import DemoProp from './Prop/DemoProp';
 // import ProductList from './Prop/ProductList';
-import DemoXemChiTiet from './Prop/DemoXemChiTiet';
+// import DemoXemChiTiet from './Prop/DemoXemChiTiet';
+import DanhSachSanPhamRedux from './DemoRedux/BTGioHangRedux/DanhSachSanPhamRedux'
 
 function App() {
   return (
@@ -26,7 +27,8 @@ function App() {
       {/* <RenderWithMap/> */}
       {/* <DemoProp/> */}
       {/* <ProductList/> */}
-      <DemoXemChiTiet/>
+      {/* <DemoXemChiTiet/> */}
+      <DanhSachSanPhamRedux />
     </div>
   );
 }
