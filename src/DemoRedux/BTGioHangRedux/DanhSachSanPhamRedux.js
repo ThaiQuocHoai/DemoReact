@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import SanPhamRedux from './SanPhamRedux'
+import GioHangRedux from './GioHangRedux'
 
 export default class DanhSachSanPhamRedux extends Component {
     
@@ -12,7 +13,7 @@ export default class DanhSachSanPhamRedux extends Component {
     renderSanPham = () =>{
         return this.mangSanPham.map((item, index)=>{
             return <div className="col-4" key={index}>
-                <SanPhamRedux sanpham={item} />
+                <SanPhamRedux sanPham={item} />
             </div>
         })
     }
@@ -21,6 +22,7 @@ export default class DanhSachSanPhamRedux extends Component {
         return (
             <div className="container">
                 <h3 className="text-center">Danh Sach San Pham</h3>
+                <GioHangRedux />
                 <div className="row">
                     {this.renderSanPham()}
                 </div>
